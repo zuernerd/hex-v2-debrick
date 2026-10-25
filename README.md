@@ -49,3 +49,7 @@ A prebuilt `flasher.bin` is included. To rebuild from source:
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -Os -ffreestanding -fno-builtin -nostdlib -T hexv2_flasher.ld hexv2_flasher.c -o flasher.elf
 arm-none-eabi-objcopy -O binary flasher.elf flasher.bin
 ```
+
+## Credits
+- [drive2.ru post](https://www.drive2.ru/b/722056708737732189/) ([Google Translate link](https://www-drive2-ru.translate.goog/b/722056708737732189/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)): Original source describing the HEX-V2 clones and bricking issue.
+- [Hackster.io post](https://www.hackster.io/PsySc0rpi0n/inside-the-hex-vii-vcds-clone-a-full-stm32f429-memory-dump-287b7f): Source for the firmware image and memory dump of the HEX-V2 clone.
